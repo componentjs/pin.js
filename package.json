@@ -1,0 +1,32 @@
+{
+  "name": "component-pin",
+  "description": "pin ranged dependencies to an installed version",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "component/pin.js",
+  "dependencies": {
+    "generator-supported": "~0.0.1",
+    "component-consoler": "^1.0.0",
+    "component-flatten": "^1.0.0",
+    "remotes": "^1.0.0",
+    "semver": "^2.2.1",
+    "co": "^3"
+  },
+  "devDependencies": {
+    "rimraf": "^2.2.5",
+    "mocha": "^1.17.0",
+    "should": "^3.0.0",
+    "gnode": "0",
+    "regenerator": "0"
+  },
+  "scripts": {
+    "test": "NODE=gnode make test",
+    "prepublish": "make clean build"
+  }
+}
