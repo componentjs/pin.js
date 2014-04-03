@@ -46,7 +46,9 @@ describe('pin', function () {
       install: true,
     });
 
-    yield* pin(tree);
+    yield* pin(tree, {
+      development: true
+    });
 
     var json = yield* read();
     assert.equal(json.development.dependencies['component/emitter'], '1.0.1');
