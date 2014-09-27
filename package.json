@@ -1,7 +1,7 @@
 {
   "name": "component-pin",
   "description": "pin ranged dependencies to an installed version",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
@@ -27,7 +27,7 @@
     "co": "^3"
   },
   "scripts": {
-    "test": "NODE=gnode make test",
+    "test": "touch component.json && NODE=gnode make test",
     "prepublish": "make clean build"
   }
 }
